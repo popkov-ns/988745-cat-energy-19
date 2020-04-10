@@ -1,0 +1,39 @@
+@import "../variables.scss";
+
+.main-block {
+  padding-top: 27px;
+  background-image: url(../../img/index-background-mobile@1x.jpg);
+  background-size: 100% 305px;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.main-block__inner {
+  padding: 0 20px;
+}
+
+.main-block__title {
+  margin: 0 0 26px;
+  color: #fff;
+  text-align: center;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.main-block__description {
+  margin: 0 0 28px;
+  color: #fff;
+  text-align: center;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.main-block__image {
+  display: block;
+  margin: 0 auto;
+}
+
+.main-block__link {
+  margin-top: 3px;
+}

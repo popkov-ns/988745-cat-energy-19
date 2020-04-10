@@ -1,0 +1,32 @@
+@import "../variables.scss";
+
+.contacts {
+  padding-top: 28px;
+}
+
+.contacts__inner {
+  padding: 0 20px;
+}
+
+.contacts__inform {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 26px;
+}
+
+.contacts__title {
+  width: 40%;
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $header-color;
+}
+
+.contacts__adress {
+  font-family: $secondary-font;
+  line-height: 20px;
+  width: 50%;
+  margin: 0;
+}
