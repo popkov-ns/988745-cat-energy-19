@@ -1,12 +1,10 @@
-@import "../variables.scss";
-
 .header {
-  position: relative;
   border-bottom: 1px solid #e6e6e6;
 }
 
 .header__inner {
   display: block;
+  position: relative;
   margin: 0 auto;
   padding: 0px 20px;
   text-align: center;
@@ -17,6 +15,14 @@
   text-transform: uppercase;
   color: $header-color;
   line-height: 63px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 
   &--accent {
     font-weight: 700;
@@ -50,9 +56,25 @@
   font-size: 20px;
   text-transform: uppercase;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
+
   &--active {
     position: relative;
     display: inline-block;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:active {
+      opacity: 1;
+    }
   }
 
   &--active::after {

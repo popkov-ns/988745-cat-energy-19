@@ -1,5 +1,3 @@
-@import "../variables.scss";
-
 .footer {
   background-color: $secondary-background;
 }
@@ -30,6 +28,18 @@
   text-align: center;
 }
 
+.social__image {
+  fill: #666666;
+
+  &:hover {
+    fill: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .footer__copyright {
   padding-top: 21px;
   padding-bottom: 22px;
@@ -43,4 +53,20 @@
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 16px;
+
+  &:hover {
+    color: $fansy-color;
+  }
+
+  &:hover .footer__image{
+    fill: $fansy-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.footer__image {
+  fill: #666666; 
 }

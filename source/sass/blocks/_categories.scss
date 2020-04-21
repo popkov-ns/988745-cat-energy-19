@@ -1,5 +1,3 @@
-@import "../variables.scss";
-
 .categories {
   margin-top: 22px;
 }
@@ -13,12 +11,17 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 21px 21px 23px 19px;
+  padding: 20px;
   background-color: $secondary-background;
 
   &:not(:first-child) {
     margin-top: 20px;
   }
+}
+
+.categories__block {
+  display: flex;
+  align-items: center;
 }
 
 .categories__wrap {
@@ -46,13 +49,12 @@
 }
 
 .categories__title {
-  margin: 9px 0 12px;
-  width: calc(100% - 72px);
+  margin: 9px 0 12px 25px;
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
   text-transform: uppercase;
-  color: #111;
+  color: #111111;
 }
 
 .categories__description {
@@ -68,6 +70,10 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
-  color: #111;
+  color: #111111;
   margin: 0;
+
+  &:active {
+    opacity: 0.3;
+  }
 }

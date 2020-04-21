@@ -1,15 +1,13 @@
-@import "../variables.scss";
-
-.before-after {
+.achievements {
   padding: 17px 0 24px;
   background-color: $secondary-background;
 }
 
-.before-after__inner {
+.achievements__inner {
   padding: 0 20px;
 }
 
-.before-after__title {
+.achievements__title {
   margin: 0 0 23px;
   font-size: 36px;
   line-height: 60px;
@@ -17,18 +15,18 @@
   color: $header-color;
 }
 
-.before-after__description {
+.achievements__description {
   margin: 0 5px 25px 0px;
   font-family: $secondary-font;
 }
 
-.before-after__details {
+.achievements__details {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.before-after__wrap-info {
+.achievements__wrap-info {
   position: relative;
   width: 124px;
   padding: 14px 0;
@@ -41,7 +39,7 @@
   }
 }
 
-.before-after__value {
+.achievements__value {
   font-size: 24px;
   line-height: 22px;
   font-weight: 400;
@@ -49,7 +47,7 @@
   color: #111;
 }
 
-.before-after__sub-description {
+.achievements__sub-description {
   position: absolute;
   left: 0;
   right: 0;
@@ -64,7 +62,7 @@
   font-family: $secondary-font;
 }
 
-.before-after__price {
+.achievements__price {
   margin: 35px 0 40px;
   line-height: 20px;
   text-transform: uppercase;

@@ -1,18 +1,14 @@
-@import "../variables.scss";
-
-.main-block {
+.hero-banner {
   padding-top: 27px;
-  background-image: url(../../img/index-background-mobile@1x.jpg);
+  background: url(../../img/index-background-mobile@1x.jpg) center top no-repeat;
   background-size: 100% 305px;
-  background-position: center top;
-  background-repeat: no-repeat;
 }
 
-.main-block__inner {
+.hero-banner__inner {
   padding: 0 20px;
 }
 
-.main-block__title {
+.hero-banner__title {
   margin: 0 0 26px;
   color: #fff;
   text-align: center;
@@ -21,7 +17,7 @@
   font-weight: 400;
 }
 
-.main-block__description {
+.hero-banner__description {
   margin: 0 0 28px;
   color: #fff;
   text-align: center;
@@ -29,11 +25,11 @@
   text-transform: uppercase;
 }
 
-.main-block__image {
+.hero-banner__image {
   display: block;
   margin: 0 auto;
 }
 
-.main-block__link {
+.hero-banner__link {
   margin-top: 3px;
 }
