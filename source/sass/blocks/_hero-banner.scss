@@ -1,0 +1,35 @@
+.hero-banner {
+  padding-top: 27px;
+  background: url(../../img/index-background-mobile@1x.jpg) center top no-repeat;
+  background-size: 100% 305px;
+}
+
+.hero-banner__inner {
+  padding: 0 20px;
+}
+
+.hero-banner__title {
+  margin: 0 0 26px;
+  color: #fff;
+  text-align: center;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.hero-banner__description {
+  margin: 0 0 28px;
+  color: #fff;
+  text-align: center;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.hero-banner__image {
+  display: block;
+  margin: 0 auto;
+}
+
+.hero-banner__link {
+  margin-top: 3px;
+}
