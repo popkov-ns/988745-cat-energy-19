@@ -36,3 +36,73 @@
   margin: 0;
   font-family: $secondary-font;
 }
+
+@media (min-width: $tablet-width) {
+  .benefit {
+    padding-top: 45px;
+    padding-bottom: 61px;
+  }
+
+  .benefit__inner {
+    padding: 0 30px;
+  }
+
+  .benefit__title {
+    font-size: 60px;
+    margin: 0;
+  }
+
+  .benefit__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .benefit__item {
+    display: block;
+    position: relative;
+    width: 50%;
+    min-height: 230px;
+    margin-top: 77px;
+  }
+
+  .benefit__image {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 30px;
+  }
+
+  .benefit__description {
+    font-size: 16px;
+    line-height: 24px;
+    width: auto;
+    max-width: 250px;
+
+    &::after {
+      content: "1";
+      position: absolute;
+      top: -40px;
+      left: 130px;
+      font-size: 281px;
+      line-height: 281px;
+      color: #f2f2f2;
+      z-index: -1;
+      font-family: $primary-font;
+    }
+
+    &--fitst::after {
+      content: "1";
+    }
+
+    &--second::after {
+      content: "2";
+    }
+
+    &--third::after {
+      content: "3";
+    }
+
+    &--fourth::after {
+      content: "4";
+    }
+  }
+}

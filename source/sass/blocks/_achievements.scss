@@ -58,7 +58,7 @@
   font-size: 12px;
   line-height: 12px;
   text-align: center;
-  background-color: #f2f2f2;
+  background-color: $secondary-background;
   font-family: $secondary-font;
 }
 
@@ -68,4 +68,61 @@
   text-transform: uppercase;
   color: #111;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .achievements {
+    padding: 44px 0 24px;
+    background-color: $main-background;
+  }
+
+  .achievements__inner {
+    padding: 0 30px;
+  }
+
+  .achievements__title {
+    margin-bottom: 66px;
+    font-size: 60px;
+  }
+
+  .achievements__description {
+    margin-bottom: 50px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .achievements__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .achievements__wrap-info {
+    padding: 23px 10px 20px;
+    width: 162px;
+
+    &:first-child {
+      margin-right: 42px;
+    }
+  }
+
+  .achievements__value {
+    font-size: 30px;
+  }
+
+  .achievements__sub-description {
+    width: 135px;
+    padding: 0;
+    bottom: -5px;
+    font-size: 14px;
+    background-color: $main-background;
+  }
+
+  .achievements__price {
+    max-width: 192px;
+    margin: 0;
+    font-size: 20px;
+    text-align: right;
+    line-height: 28px;
+  }
 }
