@@ -97,7 +97,7 @@
 
   .hero-banner__image {
     position: absolute;
-    width: 625px;
+    width: 705px;
     bottom: 0px;
     right: 30px;
     margin: 0 auto;
@@ -108,5 +108,41 @@
     font-size: 20px;
     width: auto;
     padding: 16px 27px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero-banner {
+    min-height: 544px;
+    padding: 50px 88px;
+  }
+
+  .hero-banner__inner {
+    padding: 0px 80px;
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+
+  .hero-banner__title {
+    font-size: 54px;
+    max-width: 420px;
+    margin-bottom: 37px;
+  }
+
+  .hero-banner__description {
+    font-size: 18px;
+    margin-bottom: 45px;
+  }
+
+  .hero-banner__link {
+    font-size: 18px;
+    padding: 14px 24px;
+  }
+
+  .hero-banner__image {
+    width: 493px;
+    bottom: 120px;
+    right: 309px;
+    left: 498px;
   }
 }

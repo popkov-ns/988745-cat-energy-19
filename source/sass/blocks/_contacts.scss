@@ -34,6 +34,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .contacts {
+    padding-top: 0px;
+  }
+
   .contacts__inner {
     padding: 0 70px;
   }

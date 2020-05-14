@@ -1,5 +1,5 @@
 .benefit {
-  padding-top: 18px;
+  padding-top: 20px;
   padding-bottom: 42px;
 }
 
@@ -40,7 +40,7 @@
 @media (min-width: $tablet-width) {
   .benefit {
     padding-top: 45px;
-    padding-bottom: 61px;
+    padding-bottom: 56px;
   }
 
   .benefit__inner {
@@ -62,7 +62,16 @@
     position: relative;
     width: 50%;
     min-height: 230px;
-    margin-top: 77px;
+    margin-top: 73px;
+
+    &:nth-child(2n) {
+      padding-left: 30px;
+    }
+
+    &:nth-child(3),
+    &:nth-child(4) {
+      margin-top: 87px;
+    }
   }
 
   .benefit__image {
@@ -80,8 +89,8 @@
     &::after {
       content: "1";
       position: absolute;
-      top: -40px;
-      left: 130px;
+      top: -44px;
+      left: 115px;
       font-size: 281px;
       line-height: 281px;
       color: #f2f2f2;
@@ -95,6 +104,7 @@
 
     &--second::after {
       content: "2";
+      left: 142px;
     }
 
     &--third::after {
@@ -103,6 +113,9 @@
 
     &--fourth::after {
       content: "4";
+      left: 142px;
     }
   }
 }
+
+
