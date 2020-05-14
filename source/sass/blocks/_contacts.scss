@@ -28,3 +28,37 @@
   width: 50%;
   margin: 0;
 }
+
+.contacts__map {
+  background-color: $secondary-background;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    padding-top: 0px;
+  }
+
+  .contacts__inner {
+    padding: 0 70px;
+  }
+
+  .contacts__inform {
+    padding: 60px 0;
+  }
+
+  .contacts__title {
+    max-width: 160px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .contacts__adress {
+    font-size: 16px;
+    max-width: 170px;
+    text-align: right;
+  }
+
+  .contacts__map-iframe {
+    height: 395px;
+  }
+}

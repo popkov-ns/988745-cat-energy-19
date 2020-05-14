@@ -49,7 +49,7 @@
 }
 
 .categories__title {
-  margin: 9px 0 12px 25px;
+  margin: 9px 0 14px 18px;
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
@@ -75,5 +75,129 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .categories {
+    margin-top: 0;
+  }
+
+  .categories__inner {
+    padding: 0 30px;
+  }
+
+  .categories__item {
+    position: relative;
+    padding: 78px 312px 64px 53px;
+
+    &:not(:first-child) {
+      margin-top: 28px;
+    }
+  }
+
+  .categories__wrap {
+    position: absolute;
+    right: 60px;
+    top: 96px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .categories__image {
+    height: 100%;
+
+    &--slim {
+      width: 69%;
+      left: 30px;
+      bottom: 17px;
+    }
+
+    &--pro {
+      width: 133%;
+      left: -33px;
+      bottom: 3px;
+    }
+  }
+
+  .categories__title {
+    margin: 0 0 8px;
+    font-size: 36px;
+  }
+
+  .categories__description {
+    margin-bottom: 18px;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+  }
+
+  .categories__link {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .categories__inner {
+    max-width: 1300px;
+    padding: 0px 100px;
+    margin: 0 auto;
+  }
+
+  .categories__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .categories__item {
+    padding: 42px 55px 56px 44px;
+    width: 505px;
+
+    &:not(:first-child) {
+      margin-top: 0;
+      width: 520px;
+    }
+  }
+
+  .categories__wrap {
+    position: relative;
+    margin-left: 0px;
+    margin-right: 55px;
+    right: auto;
+    top: auto;
+    width: 90px;
+    height: 90px;
+  }
+
+  .categories__image {
+
+    &--slim {
+      width: 69%;
+      left: 14px;
+      bottom: 7px;
+    }
+
+    &--pro {
+      left: -15px;
+      bottom: 1px;
+    }
+  }
+
+  .categories__title {
+    margin: 0 0 10px;
+    font-size: 32px;
+  }
+
+  .categories__description {
+    font-size: 14px;
+    line-height: 22px;
+    border: none;
+    margin: 33px 0 0px;
+    letter-spacing: 0.01em;
+  }
+
+  .categories__link {
+    font-size: 18px;
+    padding-top: 8px;
   }
 }
