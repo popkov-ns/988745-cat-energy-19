@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="header">
+    <header class="header header--index">
       <div class="header__inner">
         <a class="logo logo--header">
           <picture>
@@ -102,46 +102,48 @@
         </div>
       </section>
       <section class="achievements">
-        <div class="achievements__inner">
-          <h2 class="achievements__title">Живой пример</h2>
-          <p class="achievements__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-          <div class="achievements__block">
-            <div class="achievements__details">
-              <div class="achievements__wrap-info">
-                <span class="achievements__value">5 кг</span>
-                <span class="achievements__sub-description">снижение веса</span>
+        <div class="achievements__wrapper">
+          <div class="achievements__inner">
+            <h2 class="achievements__title">Живой пример</h2>
+            <p class="achievements__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+            <div class="achievements__block">
+              <div class="achievements__details">
+                <div class="achievements__wrap-info">
+                  <span class="achievements__value">5 кг</span>
+                  <span class="achievements__sub-description">снижение веса</span>
+                </div>
+                <div  class="achievements__wrap-info">
+                  <span class="achievements__value">60 дней</span>
+                  <span class="achievements__sub-description">затрачено времени</span>
+                </div>
               </div>
-              <div  class="achievements__wrap-info">
-                <span class="achievements__value">60 дней</span>
-                <span class="achievements__sub-description">затрачено времени</span>
-              </div>
-            </div>
-            <p class="achievements__price">Затраты на питание: 15 000 руб.</p>
-          </div>
-        </div>
-        <div class="achievements__slider slider">
-          <div class="slider__img-block">
-            <div class="slider__before-block">
-              <picture>
-                <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png">
-                <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
-                <img class="slider__img-before" src="img/before-mobile@1x.png" alt="Толстый кот">
-              </picture>
-            </div>
-            <div class="slider__after-block">
-              <picture>
-                <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png">
-                <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png">
-                <img class="slider__img-after" src="img/after-mobile@1x.png" alt="Худой кот">
-              </picture>
+              <p class="achievements__price">Затраты на питание: <span class="achievements__price-exact">15 000 руб.</span></p>
             </div>
           </div>
-          <div class="slider__button-block">
-            <button class="slider__button">Было</button>
-            <div class="slider__progress">
-              <div class="slider__scale"></div>
+          <div class="achievements__slider slider">
+            <div class="slider__img-block">
+              <div class="slider__before-block">
+                <picture>
+                  <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png">
+                  <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
+                  <img class="slider__img-before" src="img/before-mobile@1x.png" alt="Толстый кот">
+                </picture>
+              </div>
+              <div class="slider__after-block">
+                <picture>
+                  <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png">
+                  <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png">
+                  <img class="slider__img-after" src="img/after-mobile@1x.png" alt="Худой кот">
+                </picture>
+              </div>
             </div>
-            <button class="slider__button">Стало</button>
+            <div class="slider__button-block">
+              <button class="slider__button">Было</button>
+              <div class="slider__progress">
+                <div class="slider__scale"></div>
+              </div>
+              <button class="slider__button">Стало</button>
+            </div>
           </div>
         </div>
       </section>

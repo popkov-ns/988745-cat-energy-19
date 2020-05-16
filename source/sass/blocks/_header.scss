@@ -179,48 +179,55 @@
 }
 
 @media (min-width: $desktop-width) {
-  .header {
+  .header--index {
     &::before {
       content: "";
       position: absolute;
       right: 0;
       top: 0;
       width: 50%;
-      height: 621px;
+      height: 696px;
       background-color: #64a83b;
       z-index: -2;
       background-image: url(../img/index-background-desktop@1x.jpg);
       background-repeat: no-repeat;
       background-position: right top;
     }
+
+    .main-nav__link {
+      color: #ffffff;
+
+      &--active::after {
+        background-color: #ffffff;
+      }
+    }
   }
 
   .header__inner {
     max-width: 1300px;
-    padding: 45px 112px 40px;
+    padding: 53px 40px 40px;
   }
 
   .logo__image {
-    width: 185px;
-    top: 48px;
-    left: 97px;
+    width: 200px;
+    top: 54px;
+    left: 41px;
   }
 
   .logo--header {
-    margin-left: 60px;
-    font-size: 23px;
+    margin-left: 85px;
+    font-size: 25px;
   }
 
   .main-nav__item {
-    padding-left: 29px;
+    padding-left: 34px;
   }
 
   .main-nav__link {
-    color: #ffffff;
+    font-size: 20px;
 
     &--active::after {
-      background-color: #ffffff;
-      bottom: 12px;
+      bottom: 8px;
     }
   }
 }
