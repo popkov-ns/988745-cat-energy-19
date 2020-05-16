@@ -33,7 +33,7 @@
   background-color: $secondary-background;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .contacts {
     padding-top: 0px;
   }
@@ -60,5 +60,28 @@
 
   .contacts__map-iframe {
     height: 395px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    position: relative;
+  }
+
+  .contacts__inner {
+    position: absolute;
+    width: 570px;
+    top: 96px;
+    left: 110px;
+    padding: 0 76px;
+    background-color: $main-background;
+  }
+
+  .contacts__inform {
+    padding: 63px 0;
+  }
+
+  .contacts__adress {
+    text-align: left;
   }
 }

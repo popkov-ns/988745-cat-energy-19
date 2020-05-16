@@ -116,7 +116,15 @@
   width: 50%;
   height: 6px;
   border-radius: 50px;
-  background: #68b738;
+  background: $fansy-color;
+
+  &:hover {
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.25)
+  }
+
+  &:active {
+    border: 1px solid $fansy-color;
+  }
 }
 
 
@@ -236,6 +244,14 @@
     font-size: 20px;
     line-height: 20px;
     border-bottom: 1px dotted #000000;
+
+    &:hover {
+      border-bottom-style: solid;
+    }
+
+    &:focus {
+      border: none;
+    }
   }
 
   .slider__progress {
@@ -265,5 +281,79 @@
       top: 12px;
       left: 12px;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .achievements {
+    position: relative;
+    padding: 20px 0 71px;
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 462px;
+      background-repeat: no-repeat;
+      background-color: $secondary-background;
+      z-index: -1;
+    }
+  }
+
+  .achievements__wrapper {
+    max-width: 1300px;
+    padding: 0px 10px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .achievements__inner {
+    margin-bottom: 0;
+  }
+
+  .achievements__title {
+    margin-bottom: 146px;
+  }
+
+  .achievements__description {
+    width: 435px;
+    margin-bottom: 69px;
+  }
+
+  .achievements__sub-description {
+    background-color: $secondary-background;
+  }
+
+  .achievements__price {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 57px 40px 0 0;
+  }
+
+  .achievements__block {
+    width: 367px;
+    display: block;
+  }
+
+  .achievements__slider {
+    position: absolute;
+    right: -2px;
+    top: -52px;
+  }
+
+  .slider__before-block {
+    width: 380px;
+  }
+
+  .slider::after {
+    display: none;
+  }
+
+  .slider__button-block {
+    padding: 38px 43px 0 94px;
+    max-width: 100%;
   }
 }

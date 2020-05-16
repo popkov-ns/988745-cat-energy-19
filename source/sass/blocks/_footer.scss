@@ -135,3 +135,11 @@
     margin-left: 10px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .footer__inner {
+    max-width: 1300px;
+    padding: 0px 40px;
+    margin: 0 auto;
+  }
+}
