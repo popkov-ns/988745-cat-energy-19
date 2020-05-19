@@ -1,0 +1,152 @@
+.add-catalog {
+  padding: 27px 0 36px;
+}
+
+.add-catalog__inner {
+  padding: 0 20px;
+}
+
+.add-catalog__title {
+  position: relative;
+  display: inline-block;
+  padding: 0 22px 0 40px;
+  margin: 0 0 33px -40px;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $header-color;
+  background-color: $main-background;
+}
+
+.add-catalog__list {
+  border-top: 1px solid #d9d9d9
+}
+
+.add-catalog__item {
+  border-bottom: 1px solid #d9d9d9;
+  padding: 12px 0 17px;
+}
+
+// add-catalog__item -> element
+.element__title {
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0 0 12px;
+  color: #222222;
+}
+
+.element__block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-family: $secondary-font;
+  line-height: 14px;
+}
+
+.element__button {
+  width: 100%;
+  font-size: 16px;
+}
+
+.element__value,
+.element__price {
+  margin: 0;
+}
+
+.add-catalog__offer {
+  height: 289px;
+  margin-top: 39px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+  background-color: $fansy-color;
+  background-image: url(../img/gift-photo-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.add-catalog__icon {
+  fill: #ffffff;
+  margin-bottom: 60px;
+}
+
+.add-catalog__description {
+  margin: 0 0 43px;
+  width: 165px;
+  font-family: "Arial",sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: #fff;
+}
+
+
+@media (min-width: $tablet-width) {
+  .add-catalog {
+    padding: 19px 0 80px;
+  }
+
+  .add-catalog__inner {
+    padding: 0 30px;
+  }
+
+  .add-catalog__title {
+    font-size: 36px;
+    padding-right: 40px;
+    margin-left: 0;
+    margin-bottom: 84px;
+  }
+
+  .strikethrough-text::after {
+    left: -30px;
+  }
+
+  .add-catalog__item {
+    border: 1px solid #d9d9d9;
+    border-top: none;
+    padding: 26px 36px 27px 38px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .element__title {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .element__block {
+    font-size: 16px;
+    margin: 0;
+    align-self: flex-end;
+  }
+
+  .element__value {
+    margin-right: 52px;
+  }
+
+  .element__button {
+    margin-top: 27px;
+  }
+
+  .add-catalog__offer {
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 200px;
+    background-image: url(../img/gift-photo-tablet@1x.jpg);
+    height: auto;
+    margin-top: 69px;
+    padding: 0px 120px 0 89px;
+  }
+
+  .add-catalog__icon {
+    margin: 0;
+  }
+
+  .add-catalog__description {
+    margin: 0;
+    text-align: left;
+  }
+}
