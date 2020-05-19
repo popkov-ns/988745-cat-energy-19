@@ -1,5 +1,9 @@
 .contacts {
   padding-top: 28px;
+
+  &--catalog {
+    background: $secondary-background;
+  }
 }
 
 .contacts__inner {
@@ -33,7 +37,7 @@
   background-color: $secondary-background;
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $tablet-width) {
   .contacts {
     padding-top: 0px;
   }
