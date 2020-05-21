@@ -1,5 +1,6 @@
 .add-catalog {
   padding: 27px 0 36px;
+  position: relative;
 }
 
 .add-catalog__inner {
@@ -7,7 +8,6 @@
 }
 
 .add-catalog__title {
-  position: relative;
   display: inline-block;
   padding: 0 22px 0 40px;
   margin: 0 0 33px -40px;
@@ -16,6 +16,10 @@
   font-weight: 400;
   color: $header-color;
   background-color: $main-background;
+}
+
+.add-catalog .strikethrough-text::after {
+  top: 38px;
 }
 
 .add-catalog__list {
@@ -99,8 +103,8 @@
     margin-bottom: 84px;
   }
 
-  .strikethrough-text::after {
-    left: -30px;
+  .add-catalog .strikethrough-text::after {
+    top: 32px;
   }
 
   .add-catalog__item {
@@ -148,5 +152,73 @@
   .add-catalog__description {
     margin: 0;
     text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .add-catalog {
+    padding-top: 24px;
+    padding-bottom: 82px;
+  }
+
+  .add-catalog__inner {
+    max-width: 1300px;
+    padding: 0px 40px;
+    margin: 0 auto;
+  }
+
+  .add-catalog__title {
+    margin-left: -40px;
+  }
+
+  .add-catalog .strikethrough-text::after {
+    top: 38px;
+  }
+
+  .add-catalog__block {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .add-catalog__wrapper {
+    width: 895px;
+  }
+
+  .add-catalog__item {
+    align-items: center;
+    padding: 16px 0;
+    border-left: none;
+    border-right: none;
+  }
+
+  .element__title {
+    width: 285px;
+  }
+
+  .element__block {
+    width: 285px;
+    align-self: center;
+  }
+
+  .element__value {
+    margin: 0;
+  }
+
+  .element__button {
+    width: 245px;
+    margin: 0;
+  }
+
+  .add-catalog__offer {
+    width: 245px;
+    margin: 0;
+    flex-direction: column;
+    min-height: 290px;
+    padding: 67px 10px 45px;
+    background-image: url(../img/gift-photo-desktop@1x.jpg);
+  }
+
+  .add-catalog__description {
+    text-align: center;
   }
 }

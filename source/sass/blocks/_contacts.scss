@@ -73,19 +73,23 @@
   }
 
   .contacts__inner {
-    position: absolute;
-    width: 570px;
-    top: 96px;
-    left: 110px;
-    padding: 0 76px;
-    background-color: $main-background;
+    max-width: 1300px;
+    padding: 0px 40px;
+    margin: 0 auto;
+    position: relative;
   }
 
   .contacts__inform {
-    padding: 63px 0;
+    position: absolute;
+    width: 570px;
+    top: 96px;
+    left: 40px;
+    background-color: $main-background;
+    padding: 63px 76px;
   }
 
   .contacts__adress {
     text-align: left;
   }
 }
+
