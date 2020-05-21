@@ -258,3 +258,170 @@
   font-family: $secondary-font;
   margin: 20px 0 33px 0px;
 }
+
+@media (min-width: $tablet-width) {
+  .program__title {
+    font-size: 60px;
+    padding: 32px 30px 0;
+    margin: 0 0 56px;
+  }
+
+  .program__subtitle {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0px 250px 60px 0px;
+    padding: 0px 70px;
+  }
+
+  .form__fieldset{
+    &--line {
+      margin: 39px 0 0;
+      padding: 25px;
+      border: 1px solid #e6e6e6;
+    }
+
+    &--contact {
+      margin-top: 82px;
+    }
+
+    &--comment {
+      margin-top: 52px;
+    }
+
+    &--optional {
+      margin-top: 68px;
+    }
+  }
+
+  .form__wrap {
+    padding: 0 70px;
+  }
+
+  .form__label {
+    margin-bottom: 15px;
+  }
+
+  .form__text {
+    font-size: 20px;
+  }
+
+  .form__input {
+    padding: 10px 20px;
+    font-size: 20px;
+    line-height: 20px
+  }
+
+  .form__radio {
+    font-size: 20px;
+    margin-bottom: 15px;
+    padding-left: 62px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      left: 12px;
+      width: 18px;
+      height: 18px;
+    }
+
+    &::after {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .form__title {
+    font-size: 36px;
+    padding: 0 30px;
+    max-width: none;
+    margin: 0px 0 78px;
+  }
+
+  .form .strikethrough-text {
+    padding: 0 40px;
+  }
+
+  .form__textarea-block {
+    padding: 0 70px;
+  }
+
+  .form__textarea {
+    margin-top: 5px;
+    height: 173px;
+    padding: 8px 17px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form__fieldset--optional .form__title {
+    margin-bottom: 65px;
+  }
+
+  .form__fieldset--optional .form__block {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__fieldset--optional .form__wrap {
+    width: 50%;
+    padding: 0;
+
+    &:nth-child(2n + 1) {
+      padding-left: 70px;
+    }
+
+    &:nth-child(2n) {
+      padding-right: 70px;
+      padding-left: 30px;
+    }
+  }
+
+  .form__checkbox {
+    font-size: 20px;
+    padding-left: 57px;
+    margin-bottom: 32px;
+
+    &::before {
+      left: 15px;
+      border-right: 2px solid #68b738;
+      border-bottom: 2px solid #68b738;
+    }
+
+    &::after {
+      width: 38px;
+      height: 38px;
+    }
+  }
+
+  .form__block-button {
+    display: flex;
+    padding-bottom: 75px;
+  }
+
+  .form__block-button .form__wrap {
+    width: 50%;
+    padding: 0;
+
+    &:first-child {
+      padding: 0 30px 0 70px;
+    }
+
+    &:last-child {
+      padding: 0 70px 0 30px;
+    }
+  }
+
+  .form__button {
+    margin-top: 9px;
+    padding: 15px;
+    font-size: 20px
+  }
+
+  .form__required {
+    margin: 24px 0 20px;
+    text-align: left;
+    font-size: 16px;
+  }
+}
