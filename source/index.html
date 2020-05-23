@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Кэт энерджи - интернет магазин по подбору питания для котов</title>
-    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <header class="header header--index">
@@ -36,9 +37,9 @@
           <h1 class="hero-banner__title">Функциональное питание для котов</h1>
           <p class="hero-banner__description">Занялся собой? Займись котом!</p>
           <picture>
-            <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png">
-            <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
-            <img class="hero-banner__image" src="img/index-can-mobile.png" alt="Полезный продукт" width="280" height="270">
+            <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png, img/index-can-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg, img/index-can-tablet@2x.jpg 2x">
+            <img class="hero-banner__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="Полезный продукт" width="280" height="270">
           </picture>
           <a class="hero-banner__link button" href="form.html">Подобрать программу</a>
         </div>
@@ -124,16 +125,16 @@
             <div class="slider__img-block">
               <div class="slider__before-block">
                 <picture>
-                  <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png">
-                  <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
-                  <img class="slider__img-before" src="img/before-mobile@1x.png" alt="Толстый кот">
+                  <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png, img/before-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png, img/before-tablet@2x.png 2x">
+                  <img class="slider__img-before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Толстый кот">
                 </picture>
               </div>
               <div class="slider__after-block">
                 <picture>
-                  <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png">
-                  <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png">
-                  <img class="slider__img-after" src="img/after-mobile@1x.png" alt="Худой кот">
+                  <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png, img/after-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png, img/after-tablet@2x.png 2x">
+                  <img class="slider__img-after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Худой кот">
                 </picture>
               </div>
             </div>

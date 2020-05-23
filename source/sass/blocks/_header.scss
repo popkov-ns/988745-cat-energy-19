@@ -110,6 +110,7 @@
     margin-top: -1px;
     margin-left: -12px;
     background-color: #222;
+    transition: all .5s ease;
   }
 
   &-atribut::after,
@@ -124,6 +125,19 @@
 
   &-atribut::before {
     transform: translateY(-8px);
+  }
+}
+
+.main-nav__burger--open .main-nav__burger-atribut{
+
+  background-color: transparent;
+
+  &::before {
+    transform: translateY(0px) rotate(225deg);
+  }
+
+  &::after {
+    transform: translateY(0px) rotate(135deg);
   }
 }
 
