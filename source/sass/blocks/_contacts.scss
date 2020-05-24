@@ -57,6 +57,9 @@
   }
 
   .contacts__adress {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     font-size: 16px;
     max-width: 170px;
     text-align: right;
