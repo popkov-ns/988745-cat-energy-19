@@ -141,6 +141,9 @@
   }
 }
 
+.no-js {
+  display: block;
+}
 
 @media (min-width: $tablet-width) {
   .header {
