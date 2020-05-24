@@ -83,6 +83,14 @@
     outline: 2px solid $text-color;
   }
 
+  &:focus:invalid {
+    outline: 2px solid #ff8282;
+  }
+
+  &:focus:invalid ~ svg {
+    fill: #ff8282;
+  }
+
   &:active ~ svg,
   &:focus ~ svg {
     fill: #68b738;
