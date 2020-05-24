@@ -23,10 +23,6 @@
   &:active {
     opacity: 0.6;
   }
-
-  &--accent {
-    font-weight: 700;
-  }
 }
 
 .logo__image {
@@ -34,6 +30,10 @@
   width: 38px;
   top: 9px;
   left: 20px;
+}
+
+.logo__accent {
+  font-weight: 700;
 }
 
 .main-nav__list {
